@@ -1,0 +1,20 @@
+#!/usr/bin/env node
+var argv = require('minimist')(process.argv.slice(2));
+if(argv.help) {
+  console.log([
+    'nodeocr-cli, the cli-tool for nodeocr',
+    'Usage: nodeocr <replative_path_to_image>'
+  ].join('\n'));
+  return;
+}
+
+var nodecr = require('nodecr')
+var glue =  /^win/.test(process.platform) ? '\\' : '\/';
+var image_path = [process.cwd(), argv["_"][0]].join(glue)
+nodecr.process(image_path,function(err, text) {
+  if(err) {
+    console.error(err);
+  } else {
+    console.log(text);
+  }
+});
