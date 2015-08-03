@@ -1,0 +1,19 @@
+{
+  "name": "nodecr-cli",
+  "version": "1.0.0",
+  "description": "nodecr cli-tool for nodecr",
+  "main": "./bin/index",
+  "scripts": {
+  },
+  "author": "Urucas <hello@urucas.com>",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "minimist": "^1.1.2",
+    "nodecr": "0.0.5"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "nodecr-cli": "./bin/index"
+  }
+}
