@@ -2,8 +2,8 @@
   "name": "nodecr-cli",
   "version": "1.0.0",
   "description": "nodecr cli-tool for nodecr",
-  "main": "./bin/index",
   "scripts": {
+    "start" : "./bin/index"
   },
   "author": "Urucas <hello@urucas.com>",
   "license": "MIT",
@@ -15,5 +15,9 @@
   "preferGlobal": true,
   "bin": {
     "nodecr-cli": "./bin/index"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/Urucas/nodecr-cli/issues"
+  },
+  "homepage": "https://github.com/Urucas/nodecr-cli"
 }
